@@ -26,6 +26,12 @@
 
   transition: fill 250ms var(--transition-timing-function),
   border-color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+  fill:var(--accent-color);
+  border-color: var(--accent-color);
+  }
 }
 
 .customers-list-icon {
@@ -33,8 +39,4 @@
   height: 60px;
 }
 
-.customers-list-link:hover,
-.customers-list-link:focus {
-  fill:var(--accent-color);
-  border-color: var(--accent-color);
-}
+

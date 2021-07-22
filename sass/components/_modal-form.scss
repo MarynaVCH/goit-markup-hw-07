@@ -28,11 +28,11 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--transition-timing-function);
-}
 
-.modal-form-btn:focus,
-.modal-form-btn:hover {
-  background-color: #188CE8;
+    &:focus,
+    &:hover {
+    background-color: #188CE8;
+    }
 }
 
 .modal-form-field {
@@ -56,12 +56,12 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms var(--transition-timing-function);
-}
 
-.modal-form-input:focus {
+  &:focus {
   outline: none;
   border-color: var(--accent-color);
   cursor: pointer;
+  }
 }
 
 .modal-form-icon {
@@ -73,10 +73,10 @@
   height: 18px;
   transform: translateY(-50%);
   transition: fill 250ms var(--transition-timing-function);
-}
 
-.modal-form-input:focus + .modal-form-icon {
+  .modal-form-input:focus + & {
   fill: var(--accent-color);
+}
 }
 
 .modal-form-message {
@@ -90,22 +90,16 @@
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
-}
 
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-  transition: border-color 250ms var(--transition-timing-function);
-}
+   &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color 250ms var(--transition-timing-function);
+    }
 
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/checkbox.svg);
-  background-size: cover;
-  border: none;
+   &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .modal-form-checkbox-label {
@@ -117,9 +111,8 @@
   margin-bottom: 30px;
   margin-top: 10px;
   color: var(--title-text-color);
-}
 
-.modal-form-checkbox-label::before {
+  &::before {
   display: block;
   content: "";
   height: 17px;
@@ -127,6 +120,13 @@
   margin-right: 9px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
+  }
+
+ .modal-form-checkbox:checked + &::before {
+  background-image: url(../images/checkbox.svg);
+  background-size: cover;
+  border: none;
+  }
 }
 
 .modal-form-label-link {
