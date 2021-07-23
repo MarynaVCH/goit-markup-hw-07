@@ -35,3 +35,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.social-list,
+.customers-item {
+  display: flex;
+  justify-content: space-between;
+}
