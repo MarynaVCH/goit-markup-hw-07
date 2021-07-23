@@ -4,8 +4,10 @@
   justify-content: center;
 }
 
-.filter-list:not(:last-child) {
+.filter-list {
+  &:not(:last-child) {
   margin-right: 8px;
+}
 }
 
 .portfolio {

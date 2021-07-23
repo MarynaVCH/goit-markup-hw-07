@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.menu-item {
+.menu__item {
   display: flex;
   align-items: center;
 
@@ -29,7 +29,7 @@
 }
 }
 
-.menu-link {
+.menu__link {
   display: flex;
   position: relative;
   align-items: center;
@@ -42,7 +42,7 @@
 
   transition: color 250ms var(--transition-timing-function);
 
-    &.contact {
+    &.menu__link_color {
     color: var(--title-text-color);
     }
 
@@ -52,7 +52,7 @@
     }
 }
 
-.current {
+.menu__link_current {
 
   &::after {
   position: absolute;
@@ -64,9 +64,9 @@
   border-radius: 2px;
   transform: translateY(33px);
 }
-.menu .menu-link & {
-  color: var(--accent-color);
-}
+  .menu & {
+    color: var(--accent-color);
+  }
 }
 
 .envelope,

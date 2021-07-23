@@ -4,17 +4,23 @@
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+}
+
+.header__logo {
   margin-right: 94px;
 }
 
-.logo-accent {
+.logo_theme_light {
   color: var(--primary-text-color);
 }
 
-.logo-accent-footer {
+.logo_theme_dark {
   color: var(--white-color);
 }
 
-footer .logo {
-  margin-right: 0px;
+.footer {
+
+   .logo {
+   margin-right: 0px;
 }
+} 

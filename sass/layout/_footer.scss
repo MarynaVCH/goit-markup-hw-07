@@ -11,8 +11,10 @@
   /* margin-right: 70px; */
 }
 
-.menu-footer-item:not(:last-child) {
+.menu-footer-item {
+  &:not(:last-child) {
   margin-bottom: 9px;
+  }
 }
 
 .footer-link.map {
